@@ -1,0 +1,231 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;  
+    background-color: #537951;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    background-image: url(/img/flores\ 2.png);
+    background-size:  cover;
+  background-position: center;
+  
+}
+
+
+header img{
+    width: 10%;
+    width: 200px; 
+    padding-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+main aside{
+    padding-top: 100px;
+    padding-right: 60px;
+    
+}
+
+main aside h1{
+    font-weight: 200;
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 15px;
+    color: #1f291e;
+    
+}
+
+main aside h2{
+    font-size: 35px;
+    line-height: 15px;
+    color: #ededed;
+    width: 40%;
+}
+
+
+main aside p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+#borda{
+    border: 2px solid #1f291e;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+#borda:hover{
+    color: #2e332e;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+main input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: none;
+}
+
+main button{
+    padding: 20px;
+    margin-top: 15px;
+    margin-left: 80px;
+    border-radius: 20px;
+    border: none;
+    font-size: larger;
+    color: white;
+    background-color: #1f291e;
+    cursor: pointer;
+    transition: 1.0;
+}
+
+main button:hover{
+    background-color: #465745;
+   transition:  1.5;
+}
+
+
+ article img{
+    width: 400px;
+    padding-right: 80px;
+}
+
+
+/* -- Responsividade -- */
+
+@media ( max-width: 1306px ){
+    header img{
+        display: none;
+    }
+}
+
+@media ( max-width: 1106px ) {
+    article img{
+        display: none;        
+    }
+
+    & main aside p{
+        display: flex;
+        margin-left: 50px;
+    }
+
+    & main aside h2{
+        display: flex;
+        justify-content: center;
+    }
+
+    & main aside{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    & main aside button{
+        margin-right: 80px;
+    }
+}
+
+
+@media ( max-width: 626px ){
+    main aside {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-items: center;
+    }
+
+    & main aside p{
+        padding-left: 60px
+    }
+
+    & main aside button{
+        margin-right: 80px ;
+    }
+}
+
+@media ( max-width: 622px ){
+    main aside h2{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media ( max-width: 430px ){
+    main aside h2{
+        font-size: 20px;
+    }
+}
+
+.confirmacao {
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     background-image: url(/img/flores.png);
+}
+
+.confirmacao .obrigado{
+    display: flex;
+}
+
+.confirmacao .obrigado h2{
+    width: 100%;
+    font-size: 60px;
+    color: #1f291e;
+    font-weight: 200;
+    
+}
+
+.confirmacao main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.confirmacao main h1{
+    width: 100%;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 100px;
+    margin-right: 20px;
+    font-weight: 200;
+}
+
+#confirme{
+    border: 2px solid #1f291e;
+    padding: 0px;
+    border-radius:20px;
+}
+
+#confirme:hover{
+    color: #7c837c;
+}
+
+.confirmacao main h3{
+    font-weight: 200;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    
+}
